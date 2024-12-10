@@ -1,0 +1,182 @@
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:198: RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+  warn("Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work", RuntimeWarning)
+Traceback (most recent call last):
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/main.py", line 5, in <module>
+    sounds = AudioSegment.from_file('./test.mp3', 'mp3')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+(audioLib) yuuto@24S1103264sanoyuuto backend % python3 
+Python 3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> print(os.environ['PATH'])
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/opt/anaconda3/condabin:/Users/yuuto/.cargo/bin
+>>> exit()
+(audioLib) yuuto@24S1103264sanoyuuto backend % python3 main.py 
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:198: RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+  warn("Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work", RuntimeWarning)
+Traceback (most recent call last):
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/main.py", line 5, in <module>
+    sounds = AudioSegment.from_file(file='./test.mp3',format= 'mp3')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+(audioLib) yuuto@24S1103264sanoyuuto backend % python3 main.py
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:198: RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+  warn("Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work", RuntimeWarning)
+Traceback (most recent call last):
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/main.py", line 5, in <module>
+    sounds = AudioSegment.from_file(file='./test.mp3',format= 'mp3')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+ffmpeg not found
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+ffmpeg not found
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+ffmpeg not found
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg           
+ffmpeg not found
+(audioLib) yuuto@24S1103264sanoyuuto backend %                
+ *  履歴が復元されました 
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % pip install ffmpeg-python
+Collecting ffmpeg-python
+  Obtaining dependency information for ffmpeg-python from https://files.pythonhosted.org/packages/d7/0c/56be52741f75bad4dc6555991fabd2e07b432d333da82c11ad701123888a/ffmpeg_python-0.2.0-py3-none-any.whl.metadata
+  Downloading ffmpeg_python-0.2.0-py3-none-any.whl.metadata (1.7 kB)
+Collecting future (from ffmpeg-python)
+  Obtaining dependency information for future from https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl.metadata
+  Downloading future-1.0.0-py3-none-any.whl.metadata (4.0 kB)
+Downloading ffmpeg_python-0.2.0-py3-none-any.whl (25 kB)
+Downloading future-1.0.0-py3-none-any.whl (491 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 491.3/491.3 kB 17.0 MB/s eta 0:00:00
+Installing collected packages: future, ffmpeg-python
+Successfully installed ffmpeg-python-0.2.0 future-1.0.0
+
+[notice] A new release of pip is available: 23.2.1 -> 24.3.1
+[notice] To update, run: pip install --upgrade pip
+(audioLib) yuuto@24S1103264sanoyuuto backend % python main.py 
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py:198: RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+  warn("Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work", RuntimeWarning)
+Traceback (most recent call last):
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/main.py", line 5, in <module>
+    sounds = AudioSegment.from_file(file='./test.mp3',format= 'mp3')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+ffmpeg not found
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffprobe
+ffprobe not found
+(audioLib) yuuto@24S1103264sanoyuuto backend % ffmpeg -version
+zsh: command not found: ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % ffmpeg -version
+zsh: exec format error: ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+/usr/local/bin/ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % ffmpeg -version
+zsh: exec format error: ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % ffmpeg
+zsh: exec format error: ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % sudo apt install ffmpeg
+
+Password:
+Sorry, try again.
+Password:
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % sudo apt install ffmpeg
+
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % sudo apt install ffmpeg
+
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % python main.py           
+Traceback (most recent call last):
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/main.py", line 5, in <module>
+    sounds = AudioSegment.from_file(file='./test.mp3',format= 'mp3')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuuto/Desktop/audio-mapping/audio-space/src/backend/audioLib/lib/python3.11/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: 'ffprobe'
+(audioLib) yuuto@24S1103264sanoyuuto backend % sudo apt install ffmpeg
+
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % java --version
+Unrecognized option: --version
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+(audioLib) yuuto@24S1103264sanoyuuto backend % java -version
+java version "1.8.0_431"
+Java(TM) SE Runtime Environment (build 1.8.0_431-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.431-b10, mixed mode)
+(audioLib) yuuto@24S1103264sanoyuuto backend % sudo apt install ffmpeg
+
+The operation couldn’t be completed. Unable to locate a Java Runtime that supports apt.
+Please visit http://www.java.com for information on installing Java.
+
+(audioLib) yuuto@24S1103264sanoyuuto backend % ffmpeg --version
+zsh: exec format error: ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % which ffmpeg
+/usr/local/bin/ffmpeg
+(audioLib) yuuto@24S1103264sanoyuuto backend % open /usr/local/bin  
+(audioLib) yuuto@24S1103264sanoyuuto backend %         

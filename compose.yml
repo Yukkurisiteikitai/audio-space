@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  frontend:
+    volumes:
+      - ./src/frontend
+
+  backend:
+    volumes:
+      - ./src/backend
